@@ -1,4 +1,3 @@
-#if 0
 //π≤œÌ’ª
 #include <malloc.h>
 #include <stdlib.h>
@@ -58,7 +57,7 @@ DataType TopSStack(pShareStack s, int k)
 	exit(EXIT_FAILURE);
 }
 
-int main()
+void testShareStack()
 {
 	ShareStack s;
 	InitSStack(&s);
@@ -70,4 +69,3 @@ int main()
 	PopSStack(&s, 2);
 
 }
-#endif

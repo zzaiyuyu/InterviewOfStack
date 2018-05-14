@@ -1,4 +1,3 @@
-#if 0
 //а╫у╩╤сап
 #include "stack.h"
 #include <assert.h>
@@ -80,7 +79,7 @@ int QueueBy2StackSize(pQueueByStack q)
 	return stackSize(&q->stackA) + stackSize(&q->stackB);
 }
 
-int main()
+void testQueueByStack()
 {
 	QueueByStack q;
 	QueueBy2StackInit(&q);
@@ -95,4 +94,3 @@ int main()
 	int size = QueueBy2StackSize(&q);
 
 }
-#endif

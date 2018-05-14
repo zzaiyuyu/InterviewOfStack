@@ -2,7 +2,7 @@
 #include "stack.h"
 #include <stdio.h>
 #include <string.h>
-int is_leagel(const char *in, const char *out)
+int is_legal(const char *in, const char *out)
 {
 	if (NULL == in || NULL == out) {
 		return 0;
@@ -30,9 +30,9 @@ int is_leagel(const char *in, const char *out)
 	}
 	return 0;
 }
-int main()
+void legalSequence()
 {
 	const char *in = "12345";
 	const char *out = "35421";
-	int ret = is_leagel(in, out);
+	int ret = is_legal(in, out);
 }

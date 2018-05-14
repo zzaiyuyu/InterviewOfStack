@@ -1,4 +1,3 @@
-#if 0
 //带最小值的栈
 #include "stack.h"
 #include <assert.h>
@@ -69,7 +68,7 @@ DataType MinStackMin(pMinStack s)
 	return top(&s->min);
 }
 
-int main()
+void testMinStack()
 {
 	MinStack minStack;
 	MinStackInit(&minStack);
@@ -86,5 +85,3 @@ int main()
 	MinStackPop(&minStack);
 	top = MinStackMin(&minStack);
 }
-
-#endif

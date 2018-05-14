@@ -1,4 +1,3 @@
-#if 0
 //栈应用面试题
 #include "stack.h"
 #include <stdio.h>
@@ -111,7 +110,7 @@ int exp(const char* str)
 	return top(&s);
 }
 
-int main()
+void testApp()
 {
 	//const char *string = "(()()abc{[]})";
 	//int ret = match_brackets(string);
@@ -119,5 +118,3 @@ int main()
 	int ans = exp(str);
 	system("pause");
 }
-
-#endif
